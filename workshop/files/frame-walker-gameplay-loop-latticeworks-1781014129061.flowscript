@@ -1,0 +1,464 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "caf30c62-1163-4b3d-92f3-fae262ce9f35",
+      "type": "flowNode",
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "data": {
+        "label": "Start at Mobile Base",
+        "nodeType": "event",
+        "pinsIn": 0,
+        "pinsOut": 1,
+        "pinInNames": [],
+        "pinOutNames": [],
+        "isEntry": true,
+        "isExit": false
+      },
+      "width": 168,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 69,
+        "y": 253
+      },
+      "dragging": false
+    },
+    {
+      "id": "a2ef2b5d-5de2-435c-8f9b-d396d5a555c0",
+      "type": "flowNode",
+      "position": {
+        "x": 246,
+        "y": 280
+      },
+      "data": {
+        "label": "Pilot Mobile Base",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 3,
+        "pinInNames": [],
+        "pinOutNames": [
+          "city",
+          "mssn",
+          "poi"
+        ]
+      },
+      "width": 149,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 359,
+        "y": 251
+      },
+      "dragging": false
+    },
+    {
+      "id": "4099efb9-cdcf-4983-96db-b014e9e4dca8",
+      "type": "flowNode",
+      "position": {
+        "x": 496.5,
+        "y": 560
+      },
+      "data": {
+        "label": "at city",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "pinInNames": [],
+        "pinOutNames": [
+          "stor",
+          "qust"
+        ]
+      },
+      "width": 102,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 714,
+        "y": 49
+      }
+    },
+    {
+      "id": "4798c4d0-f85f-49e1-ae75-02f2c271f292",
+      "type": "flowNode",
+      "position": {
+        "x": 496.5,
+        "y": 70
+      },
+      "data": {
+        "label": "Mission",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "pinInNames": [],
+        "pinOutNames": [
+          "win",
+          "fail"
+        ]
+      },
+      "width": 102,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 720,
+        "y": 263
+      }
+    },
+    {
+      "id": "a6f0ec6f-38bf-453c-b137-615db0ebaa8d",
+      "type": "flowNode",
+      "position": {
+        "x": 473,
+        "y": 280
+      },
+      "data": {
+        "label": "Point of Interest",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 149,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 715,
+        "y": 488
+      }
+    },
+    {
+      "id": "4dd88ed2-7a42-4f80-aaeb-2b0ee78e9c4a",
+      "type": "flowNode",
+      "position": {
+        "x": 703,
+        "y": 0
+      },
+      "data": {
+        "label": "Back to mobile base",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "pinInNames": [],
+        "pinOutNames": [],
+        "isEntry": false,
+        "isExit": true
+      },
+      "width": 162,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1044,
+        "y": 194
+      }
+    },
+    {
+      "id": "2f6c8701-1bf5-410d-9875-cc183f393d38",
+      "type": "flowNode",
+      "position": {
+        "x": 733,
+        "y": 140
+      },
+      "data": {
+        "label": "Retry?",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 102,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1095,
+        "y": 354
+      }
+    },
+    {
+      "id": "f91d630b-593c-4b64-8dc4-0513b7284664",
+      "type": "flowNode",
+      "position": {
+        "x": 703,
+        "y": 280
+      },
+      "data": {
+        "label": "Back to mobile base",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "pinInNames": [],
+        "pinOutNames": [],
+        "isEntry": false,
+        "isExit": true
+      },
+      "width": 162,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1004,
+        "y": 515
+      }
+    },
+    {
+      "id": "31a25c4b-4fbe-42c4-af66-c9db73857858",
+      "type": "flowNode",
+      "position": {
+        "x": 700,
+        "y": 420
+      },
+      "data": {
+        "label": "Buy / Sell / Upgrade",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 168,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 979,
+        "y": -80
+      }
+    },
+    {
+      "id": "16638fd1-d6aa-411d-b0a7-686b0b4e377f",
+      "type": "flowNode",
+      "position": {
+        "x": 946,
+        "y": 420
+      },
+      "data": {
+        "label": "Back to mobile base or city",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "pinInNames": [],
+        "pinOutNames": [],
+        "isEntry": false,
+        "isExit": true
+      },
+      "width": 215,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1294,
+        "y": -133
+      }
+    },
+    {
+      "id": "03d899d5-8c23-426f-98c2-7b70f9244aff",
+      "type": "flowNode",
+      "position": {
+        "x": 703,
+        "y": 630
+      },
+      "data": {
+        "label": "Talk to quest giver",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "pinInNames": [],
+        "pinOutNames": [
+          "yes",
+          "no"
+        ]
+      },
+      "width": 162,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 970,
+        "y": 47
+      },
+      "dragging": false
+    },
+    {
+      "id": "34b3da14-0d84-47b0-9a2a-e0a799eb6824",
+      "type": "flowNode",
+      "position": {
+        "x": 986,
+        "y": 560
+      },
+      "data": {
+        "label": "New quest added",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 135,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1300,
+        "y": 0
+      }
+    },
+    {
+      "id": "2b604a88-8706-4435-8cc3-aa9f5ddf50a5",
+      "type": "flowNode",
+      "position": {
+        "x": 946,
+        "y": 700
+      },
+      "data": {
+        "label": "Back to mobile base or city",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "pinInNames": [],
+        "pinOutNames": [],
+        "isEntry": false,
+        "isExit": true
+      },
+      "width": 215,
+      "height": 102,
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "0d4563b8-a2db-4b78-97a6-05441ed38777",
+      "type": "flowNode",
+      "position": {
+        "x": 1239,
+        "y": 560
+      },
+      "data": {
+        "label": "Back to mobile base or city",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "pinInNames": [],
+        "pinOutNames": [],
+        "isEntry": false,
+        "isExit": true
+      },
+      "width": 215,
+      "height": 102,
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "30672f62-ce42-4803-bd2c-6cca3ad56b1b",
+      "source": "caf30c62-1163-4b3d-92f3-fae262ce9f35",
+      "sourceHandle": "pin-out-0",
+      "target": "a2ef2b5d-5de2-435c-8f9b-d396d5a555c0",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "92dd5c63-b3c9-4d15-b0c7-507c5502b282",
+      "source": "a2ef2b5d-5de2-435c-8f9b-d396d5a555c0",
+      "sourceHandle": "pin-out-0",
+      "target": "4099efb9-cdcf-4983-96db-b014e9e4dca8",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "4bf23649-6d92-4cd5-88cf-c32d0c93915b",
+      "source": "a2ef2b5d-5de2-435c-8f9b-d396d5a555c0",
+      "sourceHandle": "pin-out-1",
+      "target": "4798c4d0-f85f-49e1-ae75-02f2c271f292",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "e30e030f-d6d4-4b7e-b71d-51d9ec226425",
+      "source": "a2ef2b5d-5de2-435c-8f9b-d396d5a555c0",
+      "sourceHandle": "pin-out-2",
+      "target": "a6f0ec6f-38bf-453c-b137-615db0ebaa8d",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "fb0f4a65-a899-4ac9-92e6-1e6c48469d65",
+      "source": "4798c4d0-f85f-49e1-ae75-02f2c271f292",
+      "sourceHandle": "pin-out-0",
+      "target": "4dd88ed2-7a42-4f80-aaeb-2b0ee78e9c4a",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "f96c1f98-e4bd-4798-97e8-c6944619002c",
+      "source": "4798c4d0-f85f-49e1-ae75-02f2c271f292",
+      "sourceHandle": "pin-out-1",
+      "target": "2f6c8701-1bf5-410d-9875-cc183f393d38",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "type": "default",
+      "source": "a6f0ec6f-38bf-453c-b137-615db0ebaa8d",
+      "sourceHandle": "pin-out-0",
+      "target": "f91d630b-593c-4b64-8dc4-0513b7284664",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-a6f0ec6f-38bf-453c-b137-615db0ebaa8dpin-out-0-f91d630b-593c-4b64-8dc4-0513b7284664pin-in-0"
+    },
+    {
+      "id": "ad82a020-dadf-481d-a177-e7e2f47e01dd",
+      "source": "4099efb9-cdcf-4983-96db-b014e9e4dca8",
+      "sourceHandle": "pin-out-0",
+      "target": "31a25c4b-4fbe-42c4-af66-c9db73857858",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "type": "default",
+      "source": "31a25c4b-4fbe-42c4-af66-c9db73857858",
+      "sourceHandle": "pin-out-0",
+      "target": "16638fd1-d6aa-411d-b0a7-686b0b4e377f",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-31a25c4b-4fbe-42c4-af66-c9db73857858pin-out-0-16638fd1-d6aa-411d-b0a7-686b0b4e377fpin-in-0"
+    },
+    {
+      "id": "2e939cfd-def3-4089-9775-12f78f66b144",
+      "source": "4099efb9-cdcf-4983-96db-b014e9e4dca8",
+      "sourceHandle": "pin-out-1",
+      "target": "03d899d5-8c23-426f-98c2-7b70f9244aff",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "197cb095-6e3d-42d9-91e9-d713fc933560",
+      "source": "03d899d5-8c23-426f-98c2-7b70f9244aff",
+      "sourceHandle": "pin-out-0",
+      "target": "34b3da14-0d84-47b0-9a2a-e0a799eb6824",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "7697bc35-75c0-40ff-a084-347a7b52cac9",
+      "source": "03d899d5-8c23-426f-98c2-7b70f9244aff",
+      "sourceHandle": "pin-out-1",
+      "target": "2b604a88-8706-4435-8cc3-aa9f5ddf50a5",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "e3fc4edd-88dc-4510-84d8-7b0f8eeb697f",
+      "source": "34b3da14-0d84-47b0-9a2a-e0a799eb6824",
+      "sourceHandle": "pin-out-0",
+      "target": "0d4563b8-a2db-4b78-97a6-05441ed38777",
+      "targetHandle": null,
+      "type": "default"
+    }
+  ]
+}
