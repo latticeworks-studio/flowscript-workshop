@@ -1,0 +1,550 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "391e20a6-51a4-40f2-9459-be3c5897203b",
+      "type": "flowNode",
+      "position": {
+        "x": 0,
+        "y": 250
+      },
+      "data": {
+        "label": "Loop Management",
+        "nodeType": "event",
+        "pinsIn": 0,
+        "pinsOut": 2,
+        "isEntry": true,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 135,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": -340.4,
+        "y": 253
+      },
+      "dragging": false
+    },
+    {
+      "id": "47ede56b-82fa-43c8-8fd7-dcd17543f6ac",
+      "type": "flowNode",
+      "position": {
+        "x": 246,
+        "y": 110
+      },
+      "data": {
+        "label": "Deploy your walker",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 155,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 26.92710787983397,
+        "y": 207.64685922010676
+      },
+      "dragging": false
+    },
+    {
+      "id": "e5ffffd1-b207-4672-aaa9-50241f04514a",
+      "type": "flowNode",
+      "position": {
+        "x": 479,
+        "y": 110
+      },
+      "data": {
+        "label": "Find loot",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 3,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 102,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 304.6854552397391,
+        "y": 202.0520658001186
+      }
+    },
+    {
+      "id": "4f97bc7d-6999-4df7-9fb5-3140027987ce",
+      "type": "flowNode",
+      "position": {
+        "x": 661.4645507812501,
+        "y": 205.44765625
+      },
+      "data": {
+        "label": "Enemy drop",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 102,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 661.4645507812501,
+        "y": 205.44765625
+      }
+    },
+    {
+      "id": "59c33a7a-e0e0-4902-82fe-8241a3a2691f",
+      "type": "flowNode",
+      "position": {
+        "x": 661.4645507812501,
+        "y": 65.44765625
+      },
+      "data": {
+        "label": "in chests",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 102,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 661.4645507812501,
+        "y": 65.44765625
+      }
+    },
+    {
+      "id": "a912ce97-134b-4ead-a885-57848cb5e1a4",
+      "type": "flowNode",
+      "position": {
+        "x": 659,
+        "y": -86.97773437499998
+      },
+      "data": {
+        "label": "exploration",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 109,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 659,
+        "y": -86.97773437499998
+      }
+    },
+    {
+      "id": "189c1c98-bb2b-4759-83b6-170a63fd3066",
+      "type": "flowNode",
+      "position": {
+        "x": 846,
+        "y": 140
+      },
+      "data": {
+        "label": "add to inventory",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": [
+          "full",
+          "fits"
+        ]
+      },
+      "width": 142,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 941.6,
+        "y": 258
+      },
+      "dragging": false
+    },
+    {
+      "id": "695df1d4-397d-4c9c-a128-92a865d596ce",
+      "type": "flowNode",
+      "position": {
+        "x": 1532,
+        "y": 110
+      },
+      "data": {
+        "label": "Go back to Mobile Base",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 182,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1932.194793419988,
+        "y": 275.9145447602609
+      }
+    },
+    {
+      "id": "316e23b8-0d33-475b-9950-2367219b86ff",
+      "type": "flowNode",
+      "position": {
+        "x": 1067.03544921875,
+        "y": 231.7724609375
+      },
+      "data": {
+        "label": "Manage Inventory",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": [
+          "drop",
+          "scrp"
+        ]
+      },
+      "width": 142,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1067.03544921875,
+        "y": 231.7724609375
+      }
+    },
+    {
+      "id": "5fe925a3-a13f-4716-bbc8-49a1ece09691",
+      "type": "flowNode",
+      "position": {
+        "x": 1295.5,
+        "y": 250
+      },
+      "data": {
+        "label": "item will be lost",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 149,
+      "height": 102,
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6ca5a0a4-c9e9-4a75-b5e0-98ca73a12c83",
+      "type": "flowNode",
+      "position": {
+        "x": 1287.03544921875,
+        "y": 47.873046875
+      },
+      "data": {
+        "label": "Scrap Resource added",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 168,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1287.03544921875,
+        "y": 47.873046875
+      }
+    },
+    {
+      "id": "293ef507-28a2-41b4-9dec-f0886a1475d9",
+      "type": "flowNode",
+      "position": {
+        "x": 1792,
+        "y": 290
+      },
+      "data": {
+        "label": "Manage new loot",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": [
+          "keep",
+          "scrp"
+        ]
+      },
+      "width": 135,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 2319.6,
+        "y": 369
+      }
+    },
+    {
+      "id": "1638b528-3308-47b7-853e-e65bdbf4f532",
+      "type": "flowNode",
+      "position": {
+        "x": 2005,
+        "y": 220
+      },
+      "data": {
+        "label": "Add to Mobile Base Inventory (unlimited)",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "isEntry": false,
+        "isExit": true,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 300,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 2555.6,
+        "y": 214
+      }
+    },
+    {
+      "id": "496af31e-703e-4475-863b-e996abea0bd2",
+      "type": "flowNode",
+      "position": {
+        "x": 2071,
+        "y": 360
+      },
+      "data": {
+        "label": "Scrap Resource added",
+        "nodeType": "event",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "isEntry": false,
+        "isExit": true,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 168,
+      "height": 102,
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "f81eec2d-490d-4ee0-98e9-ab3d3acc5b66",
+      "type": "flowNode",
+      "position": {
+        "x": 1535.5,
+        "y": 360
+      },
+      "data": {
+        "label": "Manage base inventory",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 175,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 730.5874989122183,
+        "y": 771.606853809542
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "5b73059b-33c8-4b82-bf97-812356e1ec36",
+      "source": "391e20a6-51a4-40f2-9459-be3c5897203b",
+      "sourceHandle": "pin-out-0",
+      "target": "47ede56b-82fa-43c8-8fd7-dcd17543f6ac",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "860714ea-6327-4b5e-816c-5b7ad8e49028",
+      "source": "47ede56b-82fa-43c8-8fd7-dcd17543f6ac",
+      "sourceHandle": "pin-out-0",
+      "target": "e5ffffd1-b207-4672-aaa9-50241f04514a",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "53632154-d3f2-4929-ae91-6347143b1d21",
+      "source": "e5ffffd1-b207-4672-aaa9-50241f04514a",
+      "sourceHandle": "pin-out-0",
+      "target": "4f97bc7d-6999-4df7-9fb5-3140027987ce",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "1a087188-6ee9-4cbe-bc15-5a288a5ecf1f",
+      "source": "e5ffffd1-b207-4672-aaa9-50241f04514a",
+      "sourceHandle": "pin-out-1",
+      "target": "59c33a7a-e0e0-4902-82fe-8241a3a2691f",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "f214a7b4-26c3-44fa-9045-c27ceae6c4a8",
+      "source": "e5ffffd1-b207-4672-aaa9-50241f04514a",
+      "sourceHandle": "pin-out-2",
+      "target": "a912ce97-134b-4ead-a885-57848cb5e1a4",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "6247ded4-1e6f-4fef-80ea-b5eb9982fa49",
+      "type": "default",
+      "source": "a912ce97-134b-4ead-a885-57848cb5e1a4",
+      "sourceHandle": "pin-out-0",
+      "target": "189c1c98-bb2b-4759-83b6-170a63fd3066",
+      "targetHandle": "pin-in-0"
+    },
+    {
+      "type": "default",
+      "source": "59c33a7a-e0e0-4902-82fe-8241a3a2691f",
+      "sourceHandle": "pin-out-0",
+      "target": "189c1c98-bb2b-4759-83b6-170a63fd3066",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-59c33a7a-e0e0-4902-82fe-8241a3a2691fpin-out-0-189c1c98-bb2b-4759-83b6-170a63fd3066pin-in-0"
+    },
+    {
+      "type": "default",
+      "source": "4f97bc7d-6999-4df7-9fb5-3140027987ce",
+      "sourceHandle": "pin-out-0",
+      "target": "189c1c98-bb2b-4759-83b6-170a63fd3066",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-4f97bc7d-6999-4df7-9fb5-3140027987cepin-out-0-189c1c98-bb2b-4759-83b6-170a63fd3066pin-in-0"
+    },
+    {
+      "id": "128e6573-496d-4747-ad7b-28c15bc6098b",
+      "source": "189c1c98-bb2b-4759-83b6-170a63fd3066",
+      "sourceHandle": "pin-out-1",
+      "target": "695df1d4-397d-4c9c-a128-92a865d596ce",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "0984a78b-9258-432e-811d-0ec451a89cfb",
+      "source": "189c1c98-bb2b-4759-83b6-170a63fd3066",
+      "sourceHandle": "pin-out-0",
+      "target": "316e23b8-0d33-475b-9950-2367219b86ff",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "0cc22bce-1cd1-4a73-b074-3aeccd33c9e4",
+      "source": "316e23b8-0d33-475b-9950-2367219b86ff",
+      "sourceHandle": "pin-out-0",
+      "target": "5fe925a3-a13f-4716-bbc8-49a1ece09691",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "64c67055-3375-4c41-b782-d715c73ed8d9",
+      "source": "316e23b8-0d33-475b-9950-2367219b86ff",
+      "sourceHandle": "pin-out-1",
+      "target": "6ca5a0a4-c9e9-4a75-b5e0-98ca73a12c83",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "type": "default",
+      "source": "6ca5a0a4-c9e9-4a75-b5e0-98ca73a12c83",
+      "sourceHandle": "pin-out-0",
+      "target": "695df1d4-397d-4c9c-a128-92a865d596ce",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-6ca5a0a4-c9e9-4a75-b5e0-98ca73a12c83pin-out-0-695df1d4-397d-4c9c-a128-92a865d596cepin-in-0"
+    },
+    {
+      "type": "default",
+      "source": "5fe925a3-a13f-4716-bbc8-49a1ece09691",
+      "sourceHandle": "pin-out-0",
+      "target": "695df1d4-397d-4c9c-a128-92a865d596ce",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-5fe925a3-a13f-4716-bbc8-49a1ece09691pin-out-0-695df1d4-397d-4c9c-a128-92a865d596cepin-in-0"
+    },
+    {
+      "id": "97761cc8-e489-4418-a574-f7d0d62de940",
+      "source": "695df1d4-397d-4c9c-a128-92a865d596ce",
+      "sourceHandle": "pin-out-0",
+      "target": "293ef507-28a2-41b4-9dec-f0886a1475d9",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "022880ec-8f0d-4d35-a307-b05091cc4499",
+      "source": "293ef507-28a2-41b4-9dec-f0886a1475d9",
+      "sourceHandle": "pin-out-0",
+      "target": "1638b528-3308-47b7-853e-e65bdbf4f532",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "fa9ccbcd-13e6-4f0b-a4c4-16b91dbb2032",
+      "source": "293ef507-28a2-41b4-9dec-f0886a1475d9",
+      "sourceHandle": "pin-out-1",
+      "target": "496af31e-703e-4475-863b-e996abea0bd2",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "id": "6f61842d-4556-43e5-96b3-2ee42c09f142",
+      "source": "391e20a6-51a4-40f2-9459-be3c5897203b",
+      "sourceHandle": "pin-out-1",
+      "target": "f81eec2d-490d-4ee0-98e9-ab3d3acc5b66",
+      "targetHandle": null,
+      "type": "default"
+    },
+    {
+      "type": "default",
+      "source": "f81eec2d-490d-4ee0-98e9-ab3d3acc5b66",
+      "sourceHandle": "pin-out-0",
+      "target": "293ef507-28a2-41b4-9dec-f0886a1475d9",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-f81eec2d-490d-4ee0-98e9-ab3d3acc5b66pin-out-0-293ef507-28a2-41b4-9dec-f0886a1475d9pin-in-0"
+    }
+  ]
+}
