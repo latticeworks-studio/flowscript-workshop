@@ -13,6 +13,19 @@
       ],
       "file": "workshop/files/frame-walker-gameplay-loop-latticeworks-1781014129061.flowscript",
       "uploadedAt": "2026-06-09"
+    },
+    {
+      "id": "frame-walker-loot-management-latticeworks-1781043382348",
+      "title": "Frame_Walker_Loot_Management",
+      "author": "LatticeWorks",
+      "type": "flowscript",
+      "description": "Gameplay loop for Loot Management for the upcoming game Frame Walker",
+      "tags": [
+        "framewalker",
+        "gameplay"
+      ],
+      "file": "workshop/files/frame-walker-loot-management-latticeworks-1781043382348.flowscript",
+      "uploadedAt": "2026-06-09"
     }
   ]
 }
