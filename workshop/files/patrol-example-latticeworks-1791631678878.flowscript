@@ -1,0 +1,514 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "cd58abf2-ccf6-4647-9aeb-7da5923b7ee4",
+      "type": "flowNode",
+      "position": {
+        "x": 209.474296875,
+        "y": 278.7628515625
+      },
+      "data": {
+        "label": "Start Patrol",
+        "nodeType": "event",
+        "pinsIn": 0,
+        "pinsOut": 1,
+        "isEntry": true,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 116,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 209.474296875,
+        "y": 278.7628515625
+      },
+      "dragging": false
+    },
+    {
+      "id": "a761fabb-12d4-437c-9263-0333e495f55b",
+      "type": "flowNode",
+      "position": {
+        "x": 503.6833203125,
+        "y": 309.69156250000003
+      },
+      "selected": false,
+      "data": {
+        "label": "Walk to next Waypoint",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1
+      },
+      "width": 175,
+      "height": 102,
+      "positionAbsolute": {
+        "x": 503.6833203125,
+        "y": 309.69156250000003
+      },
+      "dragging": false
+    },
+    {
+      "id": "476b5eff-e52e-4086-bfcf-3ae5956d2df2",
+      "type": "flowNode",
+      "position": {
+        "x": 1053.577109375,
+        "y": 280
+      },
+      "selected": true,
+      "data": {
+        "label": "Caught Player?",
+        "nodeType": "condition",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": [
+          "yes",
+          "no"
+        ]
+      },
+      "width": 129,
+      "height": 102,
+      "positionAbsolute": {
+        "x": 1053.577109375,
+        "y": 280
+      },
+      "dragging": false
+    },
+    {
+      "id": "c23df2c6-207e-4e46-80c8-0c84b2a825be",
+      "type": "flowNode",
+      "position": {
+        "x": 1109.4810937500001,
+        "y": 52.984960937500034
+      },
+      "selected": false,
+      "data": {
+        "label": "Chase Player",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 116,
+      "height": 102,
+      "positionAbsolute": {
+        "x": 1109.4810937500001,
+        "y": 52.984960937500034
+      },
+      "dragging": false
+    },
+    {
+      "id": "2c0bae0e-2d7e-402d-bb91-3723ff5da6d7",
+      "type": "flowNode",
+      "position": {
+        "x": 1289.0315234375,
+        "y": 265.15421875
+      },
+      "data": {
+        "label": "Raise Alarm",
+        "nodeType": "action",
+        "pinsIn": 1,
+        "pinsOut": 0,
+        "isEntry": false,
+        "isExit": true,
+        "pinInNames": [],
+        "pinOutNames": []
+      },
+      "width": 109,
+      "height": 102,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1289.0315234375,
+        "y": 265.15421875
+      },
+      "dragging": false
+    },
+    {
+      "id": "8b6dc591-c312-4c11-81e2-8ea090bd5dc8",
+      "type": "logicNode",
+      "position": {
+        "x": 232.55722656249998,
+        "y": -49.485937500000006
+      },
+      "data": {
+        "label": "In Sight",
+        "nodeType": "logic",
+        "pinsIn": 2,
+        "pinsOut": 1,
+        "logicSubType": "compare",
+        "logicConfig": {
+          "op": "<"
+        },
+        "pinInNames": [
+          "A",
+          "B"
+        ],
+        "pinOutNames": [
+          "out"
+        ]
+      },
+      "width": 162,
+      "height": 104,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 232.55722656249998,
+        "y": -49.485937500000006
+      },
+      "dragging": false
+    },
+    {
+      "id": "77a9811c-5e44-4fd5-a779-3cfbf2f112e5",
+      "type": "logicNode",
+      "position": {
+        "x": 212.76285156250003,
+        "y": 127.628515625
+      },
+      "data": {
+        "label": "Daylight",
+        "nodeType": "logic",
+        "pinsIn": 1,
+        "pinsOut": 1,
+        "logicSubType": "not",
+        "logicConfig": {},
+        "pinInNames": [
+          "A"
+        ],
+        "pinOutNames": [
+          "out"
+        ]
+      },
+      "width": 162,
+      "height": 104,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 212.76285156250003,
+        "y": 127.628515625
+      },
+      "dragging": false
+    },
+    {
+      "id": "649e267d-c3b4-4480-8083-de72171ef181",
+      "type": "logicNode",
+      "position": {
+        "x": 506.7803125,
+        "y": -0.5174609375000045
+      },
+      "data": {
+        "label": "Can See",
+        "nodeType": "logic",
+        "pinsIn": 2,
+        "pinsOut": 1,
+        "logicSubType": "and",
+        "logicConfig": {},
+        "pinInNames": [
+          "A",
+          "B"
+        ],
+        "pinOutNames": [
+          "out"
+        ]
+      },
+      "width": 162,
+      "height": 104,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 506.7803125,
+        "y": -0.5174609375000045
+      },
+      "dragging": false
+    },
+    {
+      "id": "b6d4f1bd-825e-4f8e-a3cf-32fe2337a38e",
+      "type": "logicNode",
+      "position": {
+        "x": 787.61203125,
+        "y": 124.73957031250006
+      },
+      "data": {
+        "label": "Player Spotted?",
+        "nodeType": "logic",
+        "pinsIn": 1,
+        "pinsOut": 2,
+        "logicSubType": "branch",
+        "logicConfig": {},
+        "pinInNames": [
+          "condition"
+        ],
+        "pinOutNames": [
+          "true",
+          "false"
+        ]
+      },
+      "width": 192,
+      "height": 74,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 787.61203125,
+        "y": 124.73957031250006
+      },
+      "dragging": false
+    },
+    {
+      "id": "83e10201-4356-4a0d-9058-36acec1648a9",
+      "type": "flowNode",
+      "position": {
+        "x": -75.4660546875,
+        "y": -23.303593750000033
+      },
+      "data": {
+        "label": "Guard Settings",
+        "nodeType": "data",
+        "pinsIn": 0,
+        "pinsOut": 3,
+        "isEntry": false,
+        "isExit": false,
+        "pinInNames": [],
+        "pinOutNames": [
+          "RNG",
+          "DIST",
+          "NGHT"
+        ],
+        "innerNodes": [
+          {
+            "id": "f8d0de61-3664-4f9a-a62a-adaeb9c3b5c7",
+            "type": "propertyNode",
+            "position": {
+              "x": 277,
+              "y": 92
+            },
+            "data": {
+              "propertyType": "Slider",
+              "name": "Sight Range",
+              "min": 0,
+              "max": 20,
+              "sliderValue": 8
+            },
+            "width": 217,
+            "height": 196,
+            "selected": false,
+            "positionAbsolute": {
+              "x": 277,
+              "y": 92
+            },
+            "dragging": false
+          },
+          {
+            "id": "b7d62423-824a-45c7-8131-29718b704345",
+            "type": "propertyNode",
+            "position": {
+              "x": 272,
+              "y": 311
+            },
+            "data": {
+              "propertyType": "Slider",
+              "name": "Player Distance",
+              "min": 0,
+              "max": 30,
+              "sliderValue": 12
+            },
+            "width": 217,
+            "height": 196,
+            "selected": false,
+            "dragging": false,
+            "positionAbsolute": {
+              "x": 272,
+              "y": 311
+            }
+          },
+          {
+            "id": "a60aeb15-2003-4f9f-bb39-7e7c1f52a4ed",
+            "type": "propertyNode",
+            "position": {
+              "x": 247,
+              "y": 534
+            },
+            "data": {
+              "propertyType": "Checkbox",
+              "name": "Is Night",
+              "checked": false
+            },
+            "width": 217,
+            "height": 136,
+            "selected": false,
+            "positionAbsolute": {
+              "x": 247,
+              "y": 534
+            },
+            "dragging": false
+          }
+        ],
+        "innerEdges": [
+          {
+            "type": "default",
+            "source": "f8d0de61-3664-4f9a-a62a-adaeb9c3b5c7",
+            "sourceHandle": "logic-out-value",
+            "target": "__gateway_out_0",
+            "targetHandle": null,
+            "id": "reactflow__edge-f8d0de61-3664-4f9a-a62a-adaeb9c3b5c7logic-out-value-__gateway_out_0"
+          },
+          {
+            "type": "default",
+            "source": "b7d62423-824a-45c7-8131-29718b704345",
+            "sourceHandle": "logic-out-value",
+            "target": "__gateway_out_1",
+            "targetHandle": null,
+            "id": "reactflow__edge-b7d62423-824a-45c7-8131-29718b704345logic-out-value-__gateway_out_1"
+          },
+          {
+            "type": "default",
+            "source": "a60aeb15-2003-4f9f-bb39-7e7c1f52a4ed",
+            "sourceHandle": "logic-out-value",
+            "target": "__gateway_out_2",
+            "targetHandle": null,
+            "id": "reactflow__edge-a60aeb15-2003-4f9f-bb39-7e7c1f52a4edlogic-out-value-__gateway_out_2"
+          }
+        ],
+        "hasProperties": true,
+        "pinInPositions": [],
+        "pinOutPositions": [
+          {
+            "x": 860,
+            "y": 59
+          },
+          {
+            "x": 860,
+            "y": 140
+          },
+          {
+            "x": 860,
+            "y": 220
+          }
+        ]
+      },
+      "width": 129,
+      "height": 102,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": -75.4660546875,
+        "y": -23.303593750000033
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "7c191a4e-8acf-48aa-b086-f6445b0ab330",
+      "source": "cd58abf2-ccf6-4647-9aeb-7da5923b7ee4",
+      "sourceHandle": "pin-out-0",
+      "target": "a761fabb-12d4-437c-9263-0333e495f55b",
+      "targetHandle": null,
+      "type": "smart"
+    },
+    {
+      "type": "smart",
+      "source": "b6d4f1bd-825e-4f8e-a3cf-32fe2337a38e",
+      "sourceHandle": "logic-out-false",
+      "target": "a761fabb-12d4-437c-9263-0333e495f55b",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-b6d4f1bd-825e-4f8e-a3cf-32fe2337a38elogic-out-false-a761fabb-12d4-437c-9263-0333e495f55bpin-in-0"
+    },
+    {
+      "type": "smart",
+      "source": "b6d4f1bd-825e-4f8e-a3cf-32fe2337a38e",
+      "sourceHandle": "logic-out-true",
+      "target": "c23df2c6-207e-4e46-80c8-0c84b2a825be",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-b6d4f1bd-825e-4f8e-a3cf-32fe2337a38elogic-out-true-c23df2c6-207e-4e46-80c8-0c84b2a825bepin-in-0"
+    },
+    {
+      "type": "smart",
+      "source": "c23df2c6-207e-4e46-80c8-0c84b2a825be",
+      "sourceHandle": "pin-out-0",
+      "target": "476b5eff-e52e-4086-bfcf-3ae5956d2df2",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-c23df2c6-207e-4e46-80c8-0c84b2a825bepin-out-0-476b5eff-e52e-4086-bfcf-3ae5956d2df2pin-in-0"
+    },
+    {
+      "type": "smart",
+      "source": "476b5eff-e52e-4086-bfcf-3ae5956d2df2",
+      "sourceHandle": "pin-out-0",
+      "target": "2c0bae0e-2d7e-402d-bb91-3723ff5da6d7",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-476b5eff-e52e-4086-bfcf-3ae5956d2df2pin-out-0-2c0bae0e-2d7e-402d-bb91-3723ff5da6d7pin-in-0"
+    },
+    {
+      "type": "smart",
+      "source": "476b5eff-e52e-4086-bfcf-3ae5956d2df2",
+      "sourceHandle": "pin-out-1",
+      "target": "a761fabb-12d4-437c-9263-0333e495f55b",
+      "targetHandle": "pin-in-0",
+      "id": "reactflow__edge-476b5eff-e52e-4086-bfcf-3ae5956d2df2pin-out-1-a761fabb-12d4-437c-9263-0333e495f55bpin-in-0"
+    },
+    {
+      "type": "smart",
+      "source": "83e10201-4356-4a0d-9058-36acec1648a9",
+      "sourceHandle": "pin-out-1",
+      "target": "8b6dc591-c312-4c11-81e2-8ea090bd5dc8",
+      "targetHandle": "logic-in-A",
+      "id": "reactflow__edge-83e10201-4356-4a0d-9058-36acec1648a9pin-out-1-8b6dc591-c312-4c11-81e2-8ea090bd5dc8logic-in-A"
+    },
+    {
+      "type": "smart",
+      "source": "83e10201-4356-4a0d-9058-36acec1648a9",
+      "sourceHandle": "pin-out-0",
+      "target": "8b6dc591-c312-4c11-81e2-8ea090bd5dc8",
+      "targetHandle": "logic-in-B",
+      "id": "reactflow__edge-83e10201-4356-4a0d-9058-36acec1648a9pin-out-0-8b6dc591-c312-4c11-81e2-8ea090bd5dc8logic-in-B"
+    },
+    {
+      "id": "d25e1b97-135f-4911-a31b-d575e2570426",
+      "source": "83e10201-4356-4a0d-9058-36acec1648a9",
+      "sourceHandle": "pin-out-2",
+      "target": "d09305ae-c7ba-43b7-b9d0-77c979c8464d",
+      "targetHandle": null,
+      "type": "smart"
+    },
+    {
+      "type": "smart",
+      "source": "8b6dc591-c312-4c11-81e2-8ea090bd5dc8",
+      "sourceHandle": "logic-out-out",
+      "target": "649e267d-c3b4-4480-8083-de72171ef181",
+      "targetHandle": "logic-in-A",
+      "id": "reactflow__edge-8b6dc591-c312-4c11-81e2-8ea090bd5dc8logic-out-out-649e267d-c3b4-4480-8083-de72171ef181logic-in-A"
+    },
+    {
+      "type": "smart",
+      "source": "77a9811c-5e44-4fd5-a779-3cfbf2f112e5",
+      "sourceHandle": "logic-out-out",
+      "target": "649e267d-c3b4-4480-8083-de72171ef181",
+      "targetHandle": "logic-in-B",
+      "id": "reactflow__edge-77a9811c-5e44-4fd5-a779-3cfbf2f112e5logic-out-out-649e267d-c3b4-4480-8083-de72171ef181logic-in-B"
+    },
+    {
+      "type": "smart",
+      "source": "83e10201-4356-4a0d-9058-36acec1648a9",
+      "sourceHandle": "pin-out-2",
+      "target": "77a9811c-5e44-4fd5-a779-3cfbf2f112e5",
+      "targetHandle": "logic-in-A",
+      "id": "reactflow__edge-83e10201-4356-4a0d-9058-36acec1648a9pin-out-2-77a9811c-5e44-4fd5-a779-3cfbf2f112e5logic-in-A"
+    },
+    {
+      "type": "smart",
+      "source": "649e267d-c3b4-4480-8083-de72171ef181",
+      "sourceHandle": "logic-out-out",
+      "target": "b6d4f1bd-825e-4f8e-a3cf-32fe2337a38e",
+      "targetHandle": "logic-in-condition",
+      "id": "reactflow__edge-649e267d-c3b4-4480-8083-de72171ef181logic-out-out-b6d4f1bd-825e-4f8e-a3cf-32fe2337a38elogic-in-condition"
+    },
+    {
+      "type": "smart",
+      "source": "a761fabb-12d4-437c-9263-0333e495f55b",
+      "sourceHandle": "pin-out-0",
+      "target": "b6d4f1bd-825e-4f8e-a3cf-32fe2337a38e",
+      "targetHandle": "logic-in-condition",
+      "id": "reactflow__edge-a761fabb-12d4-437c-9263-0333e495f55bpin-out-0-b6d4f1bd-825e-4f8e-a3cf-32fe2337a38elogic-in-condition"
+    }
+  ]
+}
