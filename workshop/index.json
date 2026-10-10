@@ -26,6 +26,21 @@
       ],
       "file": "workshop/files/frame-walker-loot-management-latticeworks-1781043382348.flowscript",
       "uploadedAt": "2026-06-09"
+    },
+    {
+      "id": "patrol-example-latticeworks-1791631678878",
+      "title": "Patrol_Example",
+      "author": "LatticeWorks",
+      "type": "flowscript",
+      "description": "Good example to showcase Export to code",
+      "tags": [
+        "code",
+        "export",
+        "typescript",
+        "javascript"
+      ],
+      "file": "workshop/files/patrol-example-latticeworks-1791631678878.flowscript",
+      "uploadedAt": "2026-10-10"
     }
   ]
 }
